@@ -1,0 +1,47 @@
+.sidebar {
+  background-color: var(--main-color);
+  color: var(--whit-color);
+  width: 240px;
+}
+
+.navitem {
+  cursor: pointer;
+  transition: background 0.5s, color 0.3s;  
+  text-decoration: none;
+  color: var(--whit-color);
+}
+
+.navitem:hover {
+  background-color: rgba(250, 255, 255, 0.2);
+}
+
+.Title {
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+ .activeRed {
+  color: #ff4d4d !important;  
+  font-weight: 600;  
+}
+
+ .activeRed i {
+  color: #ff4d4d !important;
+}
+ 
+.dotBadge {
+  width: 10px;
+  height: 10px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #ff4d4d;  
+  animation: pulse 1.5s infinite;  
+  margin-left: auto;  
+}
+
+ @keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}

@@ -1,0 +1,25 @@
+
+.cardStatus{
+  height:160px;
+   background-color:var(--hover-color);
+    border-radius:12px;
+    box-shadow: 7px 7px 11px -4px;
+    max-width: 280;
+}
+.icon{
+  font-size: 2rem;
+ color:var(--main-color);
+}
+.info {
+  color:  var(--main-color);
+
+}
+.counter,
+.title{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.counter{
+    font-size: 2rem;
+
+}
