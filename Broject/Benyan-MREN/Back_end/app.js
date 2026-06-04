@@ -13,6 +13,9 @@ app.use((req,res,next)=>{
 })
 }
 
+const userRoutes = require("./routes/userRoutes");
+app.use("/api/users", userRoutes);
+
 
 app.get("/test" , (req,res)=>{
 res.status(200).json({msg:"Test route"})
