@@ -39,7 +39,7 @@ const userRegister = Joi.object({
         .required()
         .messages({
             'any.only': 'Passwords do not match'
-        }),
+        })
 },{timestamps: true});
 
 
@@ -61,7 +61,10 @@ const userLogin = Joi.object({
         .required()
         .messages({
             'any.required': 'Password is required'
-        })
+        }),
+         role: Joi.string()
+        .valid('user', 'admin')
+        .required()
 });
 
 

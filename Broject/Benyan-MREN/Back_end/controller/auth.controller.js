@@ -42,7 +42,12 @@ const login = async (req, res) => {
         return res.status(400).json({ message: error.details[0].message });
     }   
     try {
-        const { email, password } = value;
+        const { email, password ,role} = value;
+        // if (role == 'user') {
+        //     return res.status(200).json({ message: "im a User" });
+        // }else if (role == 'admin') {
+        //     return res.status(200).json({ message: "im an Admin" });
+        // }
         const user = await User.findOne({ email }); 
         if (!user) {
             return res.status(400).json({ message: "Invalid email or password" });
